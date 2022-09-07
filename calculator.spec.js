@@ -7,3 +7,7 @@ test("Returns 0 for empty String", () => {
 test("Returns Answer after all numbers in input string", () => {
   expect(add("1,2,3")).toBe(6);
 });
+
+test("Returns Answer after considering alphabets in input string", () => {
+  expect(add("1,2,3,a,b")).toBe(9);
+});
