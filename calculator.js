@@ -1,4 +1,8 @@
 const add = (numbers) => {
-  return "function returns addition of numbers";
+  let answer = 0;
+  if (numbers.length === 0) {
+    return answer;
+  }
+  return answer;
 };
 module.exports = add;
