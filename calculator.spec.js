@@ -11,3 +11,7 @@ test("Returns Answer after all numbers in input string", () => {
 test("Returns Answer after considering alphabets in input string", () => {
   expect(add("1,2,3,a,b")).toBe(9);
 });
+
+test("Throws error if negative numbers exists in input string", () => {
+  expect(() => add("1,-2,-3")).toThrow("Negatives not allowed -2 -3");
+});
