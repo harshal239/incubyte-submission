@@ -31,7 +31,7 @@ const add = (numbers) => {
       let temp = parseInt(splittedString[index]);
       if (temp < 0) {
         NegativeNumbers.push(temp);
-      } else {
+      } else if (temp < 1000) {
         ToCalculateAddition.push(temp);
       }
     }

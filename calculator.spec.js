@@ -15,3 +15,7 @@ test("Returns Answer after considering alphabets in input string", () => {
 test("Throws error if negative numbers exists in input string", () => {
   expect(() => add("1,-2,-3")).toThrow("Negatives not allowed -2 -3");
 });
+
+test("Considers only numbers less than 1000", () => {
+  expect(add("1,1001,2")).toBe(3);
+});
